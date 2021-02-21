@@ -1,0 +1,51 @@
+{
+  "name": "@eirikb/parcel-transformer-mustache",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10",
+    "parcel": ">=2.0.0-beta.1"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "author": "Eirik Brandtzæg",
+  "module": "dist/parcel-mustache.esm.js",
+  "devDependencies": {
+    "@parcel/types": "^2.0.0-alpha.3",
+    "@types/mustache": "^4.1.1",
+    "husky": "^5.0.9",
+    "mock-fs": "^4.13.0",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.1.5"
+  },
+  "dependencies": {
+    "@parcel/plugin": "^2.0.0-beta.1",
+    "@types/mock-fs": "^4.13.0",
+    "dotenv": "^8.2.0",
+    "mustache": "^4.1.0"
+  }
+}
