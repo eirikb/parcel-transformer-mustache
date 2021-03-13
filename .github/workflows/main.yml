@@ -44,7 +44,7 @@ jobs:
       - run: npm test --ci --coverage --maxWorkers=2
       - run: npm run build
       - uses: JS-DevTools/npm-publish@v1
-        access: 'public'
         with:
           token: ${{ secrets.NPM_TOKEN }}
+          access: 'public'
 
